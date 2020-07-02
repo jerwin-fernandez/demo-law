@@ -1,6 +1,7 @@
-body{
-  overflow-x: hidden;
+body {
+  width: 100%;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +44,6 @@ body{
 }
 
 footer {
-  width: 100vw;
   display: block;
   padding: 50px 0;
   background-color: #18181a;
@@ -110,15 +110,28 @@ footer {
     opacity: 1;
 }
 
+@media screen and (max-width: 500px) {
 
-@media screen and (min-width: 500px) {
-  
+  .header-hero-text h1, .footer-text h1 {
+    color: brown;
+    font-size: 150% !important;
+  }
+
+  .header-hero-text p, .footer-text p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  .header-hero-text strong, .footer-text strong {
+    font-size: .6rem;
+    font-style: italic;
+  }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
    
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   
 }
